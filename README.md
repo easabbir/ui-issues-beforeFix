@@ -97,9 +97,13 @@ Feedback on Campaign
 14. "save changes" button should clear the form after submission.
 
 check responsiveness
+
 and check navigation
+
 and check with accessibility point of view
+
 and finally security 
+
 and performance point of view.
 
 Overall looks clean and we need to further check after integrating with the whole project. 
