@@ -1,0 +1,25 @@
+/* flex flex-col gap-2 */
+.containerRemote {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+/* px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-700 font-bold hover:text-gray-500 */
+.select {
+	padding: 8px 16px;
+	background-color: white;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	color: #374151;
+	font-weight: 700;
+	transition: color 0.2s;
+}
+.select:hover {
+	color: #6b7280;
+}
+/* text-base */
+.paragraph {
+	font-size: 1rem;
+	margin: 0;
+}

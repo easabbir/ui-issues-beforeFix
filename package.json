@@ -1,0 +1,79 @@
+{
+    "name": "offerwall",
+    "version": "1.0.0",
+    "scripts": {
+        "reset": "pnpm dlx rimraf node_modules ./**/node_modules",
+        "build": "webpack --mode production",
+        "build:dev": "webpack --mode development",
+        "build:start": "NODE_ENV=production node serve.js",
+        "start": "webpack serve --mode development",
+        "start:live": "webpack serve --mode development --live-reload --hot --no-cache",
+        "lint": "pnpm biome check src",
+        "format": "pnpm biome format --write src",
+        "prepare": "simple-git-hooks"
+    },
+    "lint-staged": {
+        "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+          "pnpm format"
+        ]
+      },
+      "simple-git-hooks": {
+        "pre-commit": "pnpm dlx lint-staged",
+        "pre-push": "pnpm lint"
+      },
+    "license": "MIT",
+    "author": {
+        "name": "MD. Asifur Rahman",
+        "email": "asifur.rahman@vivasoftltd.com"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/plugin-transform-runtime": "^7.26.8",
+        "@babel/preset-env": "^7.15.8",
+        "@babel/preset-react": "^7.14.5",
+        "@babel/preset-typescript": "^7.10.4",
+        "@biomejs/biome": "1.9.4",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "autoprefixer": "^10.1.0",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.3.0",
+        "dotenv-webpack": "^8.0.1",
+        "html-webpack-plugin": "^5.3.2",
+        "json-loader": "^0.5.7",
+        "lint-staged": "^15.4.3",
+        "postcss": "^8.2.1",
+        "postcss-loader": "^4.1.0",
+        "rimraf": "^6.0.1",
+        "simple-git-hooks": "^2.11.1",
+        "style-loader": "^3.3.0",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.7.3",
+        "webpack": "^5.57.1",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.3.1"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.26.7",
+        "@hookform/resolvers": "^3.10.0",
+        "@radix-ui/react-checkbox": "^1.1.4",
+        "@radix-ui/react-dialog": "^1.1.6",
+        "@radix-ui/react-label": "^2.1.2",
+        "@radix-ui/react-select": "^2.1.6",
+        "@radix-ui/react-slot": "^1.1.2",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "cmdk": "1.0.0",
+        "dotenv": "^16.4.7",
+        "lucide-react": "^0.475.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.54.2",
+        "react-intl": "^7.1.5",
+        "react-number-format": "^5.4.3",
+        "react-router-dom": "^7.1.4",
+        "tailwind-merge": "^3.0.1",
+        "tailwindcss-animate": "^1.0.7",
+        "zod": "^3.24.1"
+    }
+}

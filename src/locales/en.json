@@ -1,0 +1,8 @@
+{
+	"app.title": "Welcome to My App",
+	"app.greeting": "Hello, {name}!",
+	"button.clickme": "Click Me",
+	"app.name": "Name",
+	"app.framework": "Framework",
+	"app.language": "Language"
+}
